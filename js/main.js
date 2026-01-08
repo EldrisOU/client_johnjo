@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Mobile Navigation Toggle
+    console.log('Mobile navigation initialization...');
     const menuToggle = document.createElement('button');
     menuToggle.classList.add('menu-toggle');
     menuToggle.setAttribute('aria-label', 'Toggle Menu');

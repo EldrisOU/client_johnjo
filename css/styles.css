@@ -206,6 +206,14 @@ h3 {
     font-size: 0.75rem;
 }
 
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 /* Mobile Menu Toggle */
 .menu-toggle {
     display: none;
@@ -216,6 +224,8 @@ h3 {
     padding: 0.5rem;
     z-index: 1001;
     transition: transform var(--duration-fast) ease;
+    width: 44px;
+    height: 44px;
 }
 
 .menu-toggle:active {
@@ -486,7 +496,9 @@ h3 {
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Mobile Menu Placeholder */
