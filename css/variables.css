@@ -1,0 +1,72 @@
+:root {
+  /* 
+   * LAUNCHEDIN10 ELITE THEME: MIDNIGHT CINEMA 
+   * Strategy: Deep, rich blacks (not grey) + Golden Hour accents
+   */
+
+  /* Brand Foundation */
+  --color-primary: #020617;
+  /* Deepest Slate (Rich Black) */
+  --color-secondary: #F59E0B;
+  /* Golden Hour */
+  --color-accent: #FFFBEB;
+  /* Soft Light */
+
+  /* UI Layering - Depth System */
+  --color-bg-primary: #020617;
+  /* Base Deep */
+  --color-bg-secondary: #0F172A;
+  /* Surface Lift (Slate 900) */
+  --color-bg-tertiary: #1E293B;
+  /* Card Surfaces (Slate 800) */
+
+  /* Text Logic */
+  --color-text-primary: #F8FAFC;
+  /* Slate 50 - High readability */
+  --color-text-secondary: #94A3B8;
+  /* Slate 400 - Muted info */
+  --color-text-muted: #64748B;
+  /* Slate 500 - Deep metadata */
+
+  /* Border System - Subtle Definition */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.15);
+
+  /* Typography - Cinematic Scale */
+  --font-display: 'Cabinet Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-accent: 'Fraunces', serif;
+
+  /* Spacing - Rhythmic & Asymmetrical Support */
+  --space-xs: 0.5rem;
+  /* 8px */
+  --space-sm: 1.5rem;
+  /* 24px - Generous small */
+  --space-md: 3rem;
+  /* 48px */
+  --space-lg: 6rem;
+  /* 96px */
+  --space-xl: 10rem;
+  /* 160px - Dramatic section breaks */
+  --space-2xl: 16rem;
+  /* 256px - Cinematic pause */
+
+  /* Layout */
+  --container-max: 1600px;
+  /* Wider canvas for luxury feel */
+  --container-padding: 6vw;
+  --header-height: 100px;
+
+  /* Animation - "Heavy & Smooth" for tactile feel */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 300ms;
+  /* Slower than standard for weight */
+  --duration-medium: 600ms;
+  --duration-slow: 1000ms;
+
+  /* Shadows - Cinematic Lighting */
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 0 40px -10px rgba(245, 158, 11, 0.15);
+  /* Gold glow */
+}
