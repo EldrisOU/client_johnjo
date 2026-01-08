@@ -11,7 +11,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Mobile Navigation Toggle
-    // (To be implemented once mobile menu HTML is added)
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.setAttribute('aria-label', 'Toggle Menu');
+    menuToggle.innerHTML = '<i data-lucide="menu"></i>';
+
+    const navContainer = document.querySelector('.nav-container');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (navContainer && navLinks) {
+        navContainer.appendChild(menuToggle);
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('mobile-open');
+            menuToggle.innerHTML = isOpen ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+            lucide.createIcons(); // Re-initialize icons
+        });
+
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('mobile-open');
+                menuToggle.innerHTML = '<i data-lucide="menu"></i>';
+                document.body.style.overflow = '';
+                lucide.createIcons();
+            });
+        });
+    }
 
     // Video Facade Loader
     const videoFacades = document.querySelectorAll('.video-facade');
